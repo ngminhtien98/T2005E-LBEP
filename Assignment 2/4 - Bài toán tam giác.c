@@ -43,5 +43,7 @@ int main(){
         printf("%d, %d, %d không phải là ba cạnh của một hình tam giác. \n", a, b, c);
     } else {
     printf("%d, %d, %d không phải là ba cạnh của một hình tam giác. \n", a, b, c);
-
+            }
+        }
+    }
 }
