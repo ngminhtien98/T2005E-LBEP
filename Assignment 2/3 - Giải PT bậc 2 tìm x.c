@@ -4,7 +4,6 @@
 //
 //  Created by Nguyễn Minh Tiến on 6/3/20.
 //  Copyright © 2020 Nguyễn Minh Tiến. All rights reserved.
-//
 
 #include <stdio.h>
 #include <math.h>
