@@ -20,30 +20,30 @@ int main(){
     scanf("%d", &c);
     if (a!=0){
         if (b!=0){
-            if(!=0){
-                if(a+b>c){
-                    if(a+c>b){
-                        if(b+c>a){
+            if (c!=0){
+                if (a<(b+c)){
+                    if (b<(a+c)){
+                        if (c<(b+a)){
                             int P=a+b+c;
-                            int p=P/2;
-                            int S=sqrt((p*(p-a))*(p*(p-b))*(p*(p-c)));
-                            printf("%d, %d, %d là ba cạnh của một hình tam giác, với diện tích là %d và chu vi là %d. \n", a, b, c, S, P);
-                        }else {
+                            float p=(float)P/2;
+                            float S=sqrt((p*(p-a))*(p*(p-b))*(p*(p-c)));
+                            printf("%d, %d, %d là ba cạnh của một hình tam giác, với diện tích là %f và chu vi là %d. \n", a, b, c, S, P);
+                        } else {
                             printf("%d, %d, %d không phải là ba cạnh của một hình tam giác. \n", a, b, c);
                         }
-                    }else {
+                    } else {
                         printf("%d, %d, %d không phải là ba cạnh của một hình tam giác. \n", a, b, c);
                     }
-                }else {
+                } else {
                     printf("%d, %d, %d không phải là ba cạnh của một hình tam giác. \n", a, b, c);
                 }
             } else {
-            printf("%d, %d, %d không phải là ba cạnh của một hình tam giác. \n", a, b, c);
-        } else {
-        printf("%d, %d, %d không phải là ba cạnh của một hình tam giác. \n", a, b, c);
-    } else {
-    printf("%d, %d, %d không phải là ba cạnh của một hình tam giác. \n", a, b, c);
+                printf("%d, %d, %d không phải là ba cạnh của một hình tam giác. \n", a, b, c);
             }
+        } else {
+            printf("%d, %d, %d không phải là ba cạnh của một hình tam giác. \n", a, b, c);
         }
+    } else {
+        printf("%d, %d, %d không phải là ba cạnh của một hình tam giác. \n", a, b, c);
     }
 }
