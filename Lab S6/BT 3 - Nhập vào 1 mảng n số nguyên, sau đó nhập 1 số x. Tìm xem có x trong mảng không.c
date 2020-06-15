@@ -28,15 +28,15 @@ int main() {
         scanf("%d", &ary[i]);
     }
     
-    int count = 0;
-    for(int i=0; i<n; i++){
+    int i=0;
+    for(; i<n; i++){
         if(ary[i] == x) {
-            count++;
+            break;
         }
     }
     
-    if(count != 0) {
-        printf("Có %d phần tử %d trong mảng số nguyên được nhập.\n", count, x);
+    if(i<n) {
+        printf("Có tồn tại phần tử %d trong mảng số nguyên được nhập.\n", x);
     } else {
         printf("Không có phần tử %d nào trong mảng số nguyên được nhập.\n", x);
     }
