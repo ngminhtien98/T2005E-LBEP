@@ -31,7 +31,7 @@ int main() {
         ary[j+1] = temp;
     }
   
-    printf("Mảng được sắp xếp theo thứ tự từ bé đến gồm các phần tử: ");
+    printf("Mảng được sắp xếp theo thứ tự từ bé đến lớn là: ");
     for(int x=0; x<n; x++){
         printf("%d ", ary[x]);
     }

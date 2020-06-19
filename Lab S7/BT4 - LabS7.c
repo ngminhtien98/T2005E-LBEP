@@ -28,14 +28,26 @@ int main() {
         scanf("%d", &ary[i]);
     }
     
-    int result = 0;
+    int result;
     for(int i=0; i<n; i++){
-        if(ary[i] < x) {
-            if (ary[i] > result) {
-                result = ary[i];
-            }
+        if(ary[i] <= x) {
+            result = ary[i];
+            break;
         }
     }
-    printf("Số tiệm cận bé của %d trong dãy là %d.\n", x, result);
+    
+     for(int i=0; i<n; i++){
+         if ((ary[i] > result) && (ary[i] < x) ) {
+             result = ary[i];
+        }
+     }
+
+    if (result) {
+        printf("Số tiệm cận bé của %d trong dãy là %d.\n", x, result);
+
+    } else {
+        printf("Không có phần tử bé hơn %d được nhập.\n", x);
+
+    }
     return(0);
 }

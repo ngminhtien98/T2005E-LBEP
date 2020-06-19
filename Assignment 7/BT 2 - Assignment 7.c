@@ -9,6 +9,8 @@
 
 #include <stdio.h>
 
+
+
 int main() {
     int n;
     printf("Hãy nhập số phần tử bạn muốn nhập: ");
@@ -26,29 +28,21 @@ int main() {
     printf("Hãy nhập số bước nhảy: ");
     scanf("%d", &x);
     
-    int ary_2[n];
-    for(int i=0; i<n; i++){
-        ary_2[i] = ary[i];
-        }
-    
-    
-    for (int i=0; i<n; i++){
-        if((n-i)>x){
-            ary[i] = ary[i+x];
-            }
-        if(n-i == x){
-            ary[i] = ary_2[0];
-            }
-        if((n-i) < x) {
-            ary[i] = ary_2[n-i];
-            }
-        }
-    
     printf("Dãy số cũ là: ");
-     for(int i=0; i<n; i++){
-         printf("%d ", ary_2[i]);
-     }
-     printf("\n");
+      for(int i=0; i<n; i++){
+          printf("%d ", ary[i]);
+      }
+      printf("\n");
+    
+
+    for(int i=0; i<x; i++){
+        int tmp = ary[n-1];
+        for(int j=n-1; j>=1; j--){
+            ary[j] = ary[j-1];
+            }
+        ary[0] = tmp;
+
+        }
     
     printf("Dãy số mới là: ");
     for(int i=0; i<n; i++){
