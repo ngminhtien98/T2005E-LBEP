@@ -1,24 +1,8 @@
-//
-//  BT 2 - Assignment 9.c
-//  Assignment 9
-//
-//  Created by Nguyễn Minh Tiến on 6/24/20.
-//  Copyright © 2020 Nguyễn Minh Tiến. All rights reserved.
+
 // Nhập vào 1 chuối, đếm xem trong chuỗi có các nguyên âm ( a,e,u,o,i..) có số lượng bao nhiêu, và ký tự khác số lượng bao nhiêu.
 
-//
 #include <stdio.h>
 #include <string.h>
-
-//int count(char str[], int n, char c){
-//    int count = 0;
-//    for(int i = 0; i <= strlen(str); i++){
-//        if(str[i] == 'c') {
-//            count++;
-//        }
-//    }
-//    return count;
-//}
 
 int main() {
     char str[200];
